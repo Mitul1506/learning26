@@ -74,6 +74,26 @@ export const Navbar = () => {
     borderRadius: "2px"
   };
 
+  const loginButtonStyle = {
+    backgroundColor: "#e50914",
+    color: "white",
+    border: "none",
+    padding: "10px 25px",
+    borderRadius: "4px",
+    fontSize: "16px",
+    fontWeight: "600",
+    cursor: "pointer",
+    transition: "all 0.3s ease",
+    textDecoration: "none",
+    display: "inline-block"
+  };
+
+  const activeLoginButtonStyle = {
+    ...loginButtonStyle,
+    backgroundColor: "#f40612",
+    boxShadow: "0 0 10px rgba(229, 9, 20, 0.5)"
+  };
+
   return (
     <nav style={navbarStyle}>
       {/* Netflix Logo */}
@@ -108,6 +128,33 @@ export const Navbar = () => {
           >
             TV Shows
             {location.pathname === "/netflixshows" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/about" 
+            style={location.pathname === "/about" ? activeNavLinkStyle : navLinkStyle}
+          >
+            About
+            {location.pathname === "/about" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/payment" 
+            style={location.pathname === "/payment" ? activeNavLinkStyle : navLinkStyle}
+          >
+            Payment
+            {location.pathname === "/payment" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/login" 
+            style={location.pathname === "/login" ? activeNavLinkStyle : navLinkStyle}
+          >
+            Series
+            {location.pathname === "/login" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
       </ul>

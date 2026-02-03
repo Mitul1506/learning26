@@ -10,6 +10,9 @@ import { NetflixMovies } from "./Components/NetflixMovies";
 import { NetflixShows } from "./Components/NetflixShows";
 import { Navbar} from "./Components/NavBar"; 
 import { HomeComponent } from "./Components/HomeComponent";
+import { About } from "./Components/About";
+import { Payment} from "./Components/Payment";
+import { Series } from "./Components/Series";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
         <Route path="/netflixhome" element={<NetflixHome />}></Route>
         <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
         <Route path="/netflixshows" element={<NetflixShows />}></Route>
+        <Route path="/about" element={<About />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/series" element={<Series />} />
         <Route path="/" element = {<HomeComponent/>}></Route>
       </Routes>
     </div>
