@@ -158,6 +158,15 @@ export const Navbar = () => {
             {location.pathname === "/about" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
+        <li>
+          <Link 
+            to="/Teams" 
+            style={location.pathname === "/Teams" ? activeNavLinkStyle : navLinkStyle}
+          >
+            Teams
+            {location.pathname === "/Teams" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
         
       </ul>
     </nav>

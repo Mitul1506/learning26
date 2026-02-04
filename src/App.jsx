@@ -15,6 +15,9 @@ import { Payment} from "./Components/Payment";
 import { Series } from "./Components/Series";
 import { Error } from "./Components/Error";
 import { Watch } from "./Components/Watch";
+import { Teams } from "./Components/Teams";
+import { TeamDetail } from "./Components/TeamDetails";
+
 
 function App() {
   return (
@@ -31,6 +34,8 @@ function App() {
         <Route path="/" element = {<HomeComponent/>}></Route>
         <Route path="/*" element={<Error></Error>} />
         <Route path="/watch/:name" element = {<Watch/>}></Route>
+        <Route path="/teams" element={<Teams />} />
+  <Route path="/teamdetail/:teamname" element={<TeamDetail />} />
       </Routes>
     </div>
   );
