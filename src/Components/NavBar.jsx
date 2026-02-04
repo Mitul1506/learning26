@@ -132,13 +132,14 @@ export const Navbar = () => {
         </li>
         <li>
           <Link 
-            to="/about" 
-            style={location.pathname === "/about" ? activeNavLinkStyle : navLinkStyle}
+            to="/series" 
+            style={location.pathname === "/series" ? activeNavLinkStyle : navLinkStyle}
           >
-            About
-            {location.pathname === "/about" && <span style={activeIndicatorStyle} />}
+            Series
+            {location.pathname === "/series" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
+        
         <li>
           <Link 
             to="/payment" 
@@ -150,13 +151,14 @@ export const Navbar = () => {
         </li>
         <li>
           <Link 
-            to="/login" 
-            style={location.pathname === "/login" ? activeNavLinkStyle : navLinkStyle}
+            to="/about" 
+            style={location.pathname === "/about" ? activeNavLinkStyle : navLinkStyle}
           >
-            Series
-            {location.pathname === "/login" && <span style={activeIndicatorStyle} />}
+            About
+            {location.pathname === "/about" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
+        
       </ul>
     </nav>
   );

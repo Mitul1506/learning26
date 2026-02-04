@@ -13,6 +13,8 @@ import { HomeComponent } from "./Components/HomeComponent";
 import { About } from "./Components/About";
 import { Payment} from "./Components/Payment";
 import { Series } from "./Components/Series";
+import { Error } from "./Components/Error";
+import { Watch } from "./Components/Watch";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path="/payment" element={<Payment />} />
           <Route path="/series" element={<Series />} />
         <Route path="/" element = {<HomeComponent/>}></Route>
+        <Route path="/*" element={<Error></Error>} />
+        <Route path="/watch/:name" element = {<Watch/>}></Route>
       </Routes>
     </div>
   );

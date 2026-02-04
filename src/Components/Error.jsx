@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const HomeComponent = () => {
+export const Error = () => {
   return (
     <div style={{textAlign:"center",paddingTop: "80px"}}>
-        <h1>Home Component</h1>
-    </div>
+       <h1> Error 404, PAGE NOT FOUND </h1>
+        </div>
   )
 }
