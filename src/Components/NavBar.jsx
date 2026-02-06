@@ -32,7 +32,7 @@ export const Navbar = () => {
 
   const logoStyle = {
     color: "#e50914",
-    fontSize: "32px",
+    fontSize: "25px",
     fontWeight: "bold",
     fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
     textDecoration: "none",
@@ -165,6 +165,42 @@ export const Navbar = () => {
           >
             Teams
             {location.pathname === "/Teams" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/UseState1" 
+            style={location.pathname === "/UseState1" ? activeNavLinkStyle : navLinkStyle}
+          >
+            UseState1
+            {location.pathname === "/UseState1" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+         <li>
+          <Link 
+            to="/UseState2" 
+            style={location.pathname === "/UseState2" ? activeNavLinkStyle : navLinkStyle}
+          >
+            UseState2
+            {location.pathname === "/UseState2" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+         <li>
+          <Link 
+            to="/UseState3" 
+            style={location.pathname === "/UseState3" ? activeNavLinkStyle : navLinkStyle}
+          >
+            UseState3
+            {location.pathname === "/UseState3" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/FunctionDemo" 
+            style={location.pathname === "/FunctionDemo" ? activeNavLinkStyle : navLinkStyle}
+          >
+            FunctionDemo
+            {location.pathname === "/FunctionDemo" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
         
