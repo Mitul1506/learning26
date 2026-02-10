@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CardComponent } from "./CardComponent";
 
 export const FunctionDemo = () => {
 
@@ -63,6 +64,8 @@ export const FunctionDemo = () => {
       <br /><br />
 
       <button onClick={increaseCount}>INCREASE COUNT</button>
+
+       <CardComponent title="FUN DEMO 1" description="FUN DEMO 1 component"></CardComponent>
     </div>
   );
 };

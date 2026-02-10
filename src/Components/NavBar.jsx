@@ -203,6 +203,24 @@ export const Navbar = () => {
             {location.pathname === "/FunctionDemo" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
+         <li>
+          <Link 
+            to="/Employees" 
+            style={location.pathname === "/Employees" ? activeNavLinkStyle : navLinkStyle}
+          >
+            Employees
+            {location.pathname === "/Employees" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+         <li>
+          <Link 
+            to="/InputDemo" 
+            style={location.pathname === "/InputDemo" ? activeNavLinkStyle : navLinkStyle}
+          >
+            InputDemo
+            {location.pathname === "/InputDemo" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
         
       </ul>
     </nav>
