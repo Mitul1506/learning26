@@ -25,6 +25,10 @@ import { Employees } from "./Components/Employees";
 import { EmployeeList } from "./Components/EmployeeList";
 import { SubEmployeeList } from "./Components/SubEmployeeList";
 import { InputDemo } from "./Components/InputDemo";
+import { FormDemo1 } from "./Components/form/FormDemo1";
+import { FormDemo2 } from "./Components/form/FormDemo2";
+import { FormDemo3 } from "./Components/form/Formdemo3";
+import { FormDemo4 } from "./Components/form/FormDemo4";
 
 
 function App() {
@@ -52,6 +56,10 @@ function App() {
   <Route path="/EmployeeList" element={<EmployeeList/>} />
   <Route path="/SubEmployeeList" element={<SubEmployeeList/>} />
   <Route path="/InputDemo" element={<InputDemo/>} />
+   <Route path="/formdemo1" element = {<FormDemo1/>}></Route>
+   <Route path="/formdemo2" element = {<FormDemo2/>}></Route>
+   <Route path="/formdemo3" element = {<FormDemo3/>}></Route>
+   <Route path="/formdemo4" element = {<FormDemo4/>}></Route>
   
       </Routes>
     </div>

@@ -15,64 +15,73 @@ export const Navbar = () => {
   }, []);
 
   const navbarStyle = {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    right: 0,
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "20px 50px",
-    backgroundColor: scrolled ? "rgba(20, 20, 20, 0.95)" : "rgba(20, 20, 20, 0.8)",
-    backdropFilter: "blur(10px)",
-    zIndex: 1000,
-    transition: "all 0.3s ease",
-    borderBottom: scrolled ? "1px solid rgba(255, 255, 255, 0.1)" : "none"
-  };
+  position: "fixed",
+  top: 0,
+  left: 0,
+  right: 0,
+  display: "flex",
+  alignItems: "center",
+  padding: "12px 30px",
+  backgroundColor: scrolled
+    ? "rgba(20, 20, 20, 0.95)"
+    : "rgba(20, 20, 20, 0.85)",
+  backdropFilter: "blur(10px)",
+  zIndex: 1000,
+  transition: "all 0.3s ease",
+  borderBottom: "1px solid rgba(255,255,255,0.1)"
+};
 
   const logoStyle = {
-    color: "#e50914",
-    fontSize: "25px",
-    fontWeight: "bold",
-    fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
-    textDecoration: "none",
-    letterSpacing: "-1px"
-  };
+  color: "#e50914",
+  fontSize: "22px",
+  fontWeight: "bold",
+  textDecoration: "none",
+  letterSpacing: "-1px",
+  marginRight: "30px"
+};
 
-  const navLinksStyle = {
-    display: "flex",
-    gap: "40px",
-    alignItems: "center",
-    listStyle: "none",
-    margin: 0,
-    padding: 0
-  };
 
-  const navLinkStyle = {
-    color: "rgba(255, 255, 255, 0.9)",
-    textDecoration: "none",
-    fontSize: "16px",
-    fontWeight: "500",
-    padding: "8px 0",
-    position: "relative",
-    transition: "all 0.3s ease"
-  };
+ const navLinksStyle = {
+  display: "flex",
+  gap: "22px",
+  alignItems: "center",
+  listStyle: "none",
+  margin: 0,
+  padding: 0,
+  overflowX: "hidden",
+  whiteSpace: "nowrap"
+};
+
+
+
+
+ const navLinkStyle = {
+  color: "rgba(255, 255, 255, 0.85)",
+  textDecoration: "none",
+  fontSize: "14px",
+  fontWeight: "500",
+  padding: "6px 0",
+  position: "relative",
+  transition: "all 0.3s ease"
+};
+
 
   const activeNavLinkStyle = {
-    ...navLinkStyle,
-    color: "#ffffff",
-    fontWeight: "600"
-  };
+  ...navLinkStyle,
+  color: "#ffffff",
+  fontWeight: "600"
+};
 
-  const activeIndicatorStyle = {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: "3px",
-    backgroundColor: "#e50914",
-    borderRadius: "2px"
-  };
+ const activeIndicatorStyle = {
+  position: "absolute",
+  bottom: "-6px",
+  left: 0,
+  right: 0,
+  height: "2px",
+  backgroundColor: "#e50914",
+  borderRadius: "2px"
+};
+
 
   const loginButtonStyle = {
     backgroundColor: "#e50914",
@@ -219,6 +228,42 @@ export const Navbar = () => {
           >
             InputDemo
             {location.pathname === "/InputDemo" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+         <li>
+          <Link 
+            to="/FormDemo1" 
+            style={location.pathname === "/FormDemo1" ? activeNavLinkStyle : navLinkStyle}
+          >
+            FormDemo1
+            {location.pathname === "/FormDemo1" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/FormDemo2" 
+            style={location.pathname === "/FormDemo2" ? activeNavLinkStyle : navLinkStyle}
+          >
+            FormDemo2
+            {location.pathname === "/FormDemo2" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/FormDemo3" 
+            style={location.pathname === "/FormDemo3" ? activeNavLinkStyle : navLinkStyle}
+          >
+            FormDemo3
+            {location.pathname === "/FormDemo3" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/FormDemo4" 
+            style={location.pathname === "/FormDemo4" ? activeNavLinkStyle : navLinkStyle}
+          >
+            FormDemo4
+            {location.pathname === "/FormDemo4" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
         
