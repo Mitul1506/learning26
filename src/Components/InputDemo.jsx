@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export const InputDemo = () => {
 
-  // JSON DATA
+  
   const countryStateData = [
     {
       country: "India",
@@ -18,7 +18,7 @@ export const InputDemo = () => {
     }
   ];
 
-  // STATES
+  
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
@@ -92,7 +92,7 @@ export const InputDemo = () => {
 
       <div style={mainBoxStyle}>
 
-        {/* INPUT AREA */}
+   
         <div style={boxStyle}>
           <h3>Input Area</h3>
 
@@ -108,7 +108,7 @@ export const InputDemo = () => {
           <input style={inputStyle} placeholder="Mobile"
             value={mobile} onChange={(e) => setMobile(e.target.value)} />
 
-          {/* Gender Radio */}
+        
           <div style={{ marginTop: "10px" }}>
             <b>Gender:</b><br />
             <input type="radio" name="gender" value="Male"
@@ -117,7 +117,7 @@ export const InputDemo = () => {
               onChange={(e) => setGender(e.target.value)} /> Female
           </div>
 
-          {/* Course */}
+          
           <select style={inputStyle}
             value={course}
             onChange={(e) => setCourse(e.target.value)}>
@@ -127,7 +127,7 @@ export const InputDemo = () => {
             <option value="MCA">MCA</option>
           </select>
 
-          {/* Country */}
+         
           <select
             style={inputStyle}
             value={country}
@@ -144,7 +144,7 @@ export const InputDemo = () => {
             ))}
           </select>
 
-          {/* State (Dependent) */}
+          
           <select
             style={inputStyle}
             value={state}
@@ -175,7 +175,7 @@ export const InputDemo = () => {
           </button>
         </div>
 
-        {/* OUTPUT AREA */}
+        
         {showOutput && (
           <div style={boxStyle}>
             <h3>Display Area</h3>

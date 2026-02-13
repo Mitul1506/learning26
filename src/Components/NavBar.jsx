@@ -176,7 +176,7 @@ export const Navbar = () => {
             {location.pathname === "/Teams" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
-        <li>
+        {/*<li>
           <Link 
             to="/UseState1" 
             style={location.pathname === "/UseState1" ? activeNavLinkStyle : navLinkStyle}
@@ -203,6 +203,7 @@ export const Navbar = () => {
             {location.pathname === "/UseState3" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
+        */}
         <li>
           <Link 
             to="/FunctionDemo" 
@@ -264,6 +265,24 @@ export const Navbar = () => {
           >
             FormDemo4
             {location.pathname === "/FormDemo4" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+         <li>
+          <Link 
+            to="/FormDemo5" 
+            style={location.pathname === "/FormDemo5" ? activeNavLinkStyle : navLinkStyle}
+          >
+            FormDemo5
+            {location.pathname === "/FormDemo5" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/FormWatch" 
+            style={location.pathname === "/FormWatch" ? activeNavLinkStyle : navLinkStyle}
+          >
+            FormWatch
+            {location.pathname === "/FormWatch" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
         

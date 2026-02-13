@@ -17,7 +17,7 @@ export const FormDemo3 = () => {
     setIsSubmitted(true);
   };
 
-  // ✅ Validation JSON Object
+ 
   const validationRules = {
     name: {
       required: "Full Name is required",

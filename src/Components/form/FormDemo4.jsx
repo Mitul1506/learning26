@@ -17,7 +17,7 @@ export const FormDemo4 = () => {
     setIsSubmitted(true);
   };
 
-  // ✅ Validation JSON Object
+ 
   const validationRules = {
     name: {
       required: "Name is required",
@@ -74,7 +74,7 @@ export const FormDemo4 = () => {
         />
         <p style={{ color: "red" }}>{errors.email?.message}</p>
 
-        {/* Rating */}
+        
         <label>Rating:</label><br />
         <select {...register("rating", validationRules.rating)}>
           <option value="">Select Rating</option>

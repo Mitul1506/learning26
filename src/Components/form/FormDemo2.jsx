@@ -17,7 +17,7 @@ export const FormDemo2 = () => {
     setIsSubmitted(true);
   };
 
-  // ✅ Validation JSON Object (Only required, minLength, maxLength)
+ 
   const validationRules = {
     name: {
       required: "Full Name is required",
@@ -71,14 +71,14 @@ export const FormDemo2 = () => {
 
       <form onSubmit={handleSubmit(submitHandler)}>
 
-        {/* Name */}
+        
         <input
           type="text"
           placeholder="Full Name"
           {...register("name", validationRules.name)}
         />
         <p style={{ color: "red" }}>{errors.name?.message}</p>
-        {/* Age */}
+      
 <input
   type="number"
   placeholder="Age"
@@ -90,7 +90,7 @@ export const FormDemo2 = () => {
 
 
 
-        {/* Email */}
+      
         <input
           type="email"
           placeholder="Email"
@@ -98,7 +98,7 @@ export const FormDemo2 = () => {
         />
         <p style={{ color: "red" }}>{errors.email?.message}</p>
 
-        {/* Course */}
+        
         <label>Course:</label><br />
         <select {...register("course", validationRules.course)}>
           <option value="">Select Course</option>
@@ -108,14 +108,14 @@ export const FormDemo2 = () => {
         </select>
         <p style={{ color: "red" }}>{errors.course?.message}</p>
 
-        {/* Year */}
+       
         <label>Year:</label><br />
         <input type="radio" value="1st" {...register("year", validationRules.year)} /> 1st
         <input type="radio" value="2nd" {...register("year")} /> 2nd
         <input type="radio" value="3rd" {...register("year")} /> 3rd
         <p style={{ color: "red" }}>{errors.year?.message}</p>
 
-        {/* Skills */}
+        
         <label>Skills:</label><br />
         <input type="checkbox" value="Java" {...register("skills", validationRules.skills)} /> Java
         <input type="checkbox" value="Python" {...register("skills")} /> Python
