@@ -31,6 +31,10 @@ import { FormDemo3 } from "./Components/form/Formdemo3";
 import { FormDemo4 } from "./Components/form/FormDemo4";
 import { FormDemo5 } from "./Components/form/FormDemo5";
 import { FormWatch } from "./Components/form/FormWatch";
+import { ApiDemo1 } from "./Components/api/ApiDemo1";
+import { ApiDemo2 } from "./Components/api/ApiDemo2";
+import { ApiDemo3 } from "./Components/api/ApiDemo3";
+import { ApiDemo4 } from "./Components/api/ApiDemo4";
 
 
 function App() {
@@ -64,6 +68,10 @@ function App() {
    <Route path="/formdemo4" element = {<FormDemo4/>}></Route>
    <Route path="/formdemo5" element = {<FormDemo5/>}></Route>
    <Route path="/formwatch" element = {<FormWatch/>}></Route>
+   <Route path="/ApiDemo1" element = {<ApiDemo1/>}></Route>
+   <Route path="/ApiDemo2" element = {<ApiDemo2/>}></Route>
+   <Route path="/ApiDemo3" element = {<ApiDemo3/>}></Route>
+   <Route path="/ApiDemo4" element = {<ApiDemo4/>}></Route>
   
       </Routes>
     </div>

@@ -121,7 +121,7 @@ export const Navbar = () => {
             {location.pathname === "/netflixhome" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
-        <li>
+       {/* <li>
           <Link 
             to="/netflixmovies" 
             style={location.pathname === "/netflixmovies" ? activeNavLinkStyle : navLinkStyle}
@@ -176,7 +176,7 @@ export const Navbar = () => {
             {location.pathname === "/Teams" && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
-        {/*<li>
+        <li>
           <Link 
             to="/UseState1" 
             style={location.pathname === "/UseState1" ? activeNavLinkStyle : navLinkStyle}
@@ -283,6 +283,42 @@ export const Navbar = () => {
           >
             FormWatch
             {location.pathname === "/FormWatch" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/ApiDemo1" 
+            style={location.pathname === "/ApiDemo1" ? activeNavLinkStyle : navLinkStyle}
+          >
+            ApiDemo1
+            {location.pathname === "/ApiDemo1" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/ApiDemo2" 
+            style={location.pathname === "/ApiDemo2" ? activeNavLinkStyle : navLinkStyle}
+          >
+            ApiDemo2
+            {location.pathname === "/ApiDemo2" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/ApiDemo3" 
+            style={location.pathname === "/ApiDemo3" ? activeNavLinkStyle : navLinkStyle}
+          >
+            ApiDemo3
+            {location.pathname === "/ApiDemo3" && <span style={activeIndicatorStyle} />}
+          </Link>
+        </li>
+         <li>
+          <Link 
+            to="/ApiDemo4" 
+            style={location.pathname === "/ApiDemo4" ? activeNavLinkStyle : navLinkStyle}
+          >
+            ApiDemo4
+            {location.pathname === "/ApiDemo41  " && <span style={activeIndicatorStyle} />}
           </Link>
         </li>
         
