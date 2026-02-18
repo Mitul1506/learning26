@@ -20,10 +20,7 @@ export const ApiDemo3 = () => {
 
             <button onClick={getProducts}>GET PRODUCTS</button>
 
-            <table
-                border="1"
-                cellPadding="10"
-                style={{
+            <table border="1" cellPadding="10"style={{
                     margin: "20px auto",
                     borderCollapse: "collapse",
                     width: "90%"
